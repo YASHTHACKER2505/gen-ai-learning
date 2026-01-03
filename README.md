@@ -10,7 +10,7 @@ and projects.
 
 ## Progress Log
 
-###  01-01-2025
+###  01-01-2026
 - Watched:
   - Generative AI Introduction
   - Generative AI End-to-End Flowchart Roadmap
@@ -19,7 +19,7 @@ and projects.
 
 ---
 
-###  02-01-2025
+###  02-01-2026
 - Revised Python fundamentals:
   - Python introduction
   - Variables and input/output
@@ -29,7 +29,7 @@ and projects.
 
 ---
 
-###  03-01-2025
+###  03-01-2026
 - Watched and understood:
   - Why Data Science Knowledge is important for an AI Engineer
   - What is Artificial Intelligence and Machine Learning
