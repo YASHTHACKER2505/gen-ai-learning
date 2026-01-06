@@ -35,5 +35,5 @@ and projects.
   - AI vs ML vs NLP vs DL vs GenAI
 ---
 ### 04-01-2026 to 06-01-2026
--Watched and understood :
+- Watched and understood :
   - Types of ML
