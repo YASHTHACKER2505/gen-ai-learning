@@ -1,6 +1,15 @@
 def get_details():
     name = input("Enter your name: ")
-    course_count = int(input("How many topics are you learning? "))
+
+    while True:
+        try:
+            course_count = int(input("How many topics are you learning? "))
+            if course_count <= 0:
+                print("Please enter a number greater than 0.")
+                continue
+            break
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
     topics = []
     for i in range(course_count):
@@ -12,15 +21,24 @@ def get_details():
 
 def update_progress(topics):
     progress = {}
+
     for topic in topics:
-        status = input(f"Is '{topic}' completed? (yes/no): ").lower()
-        progress[topic] = True if status == "yes" else False
+        while True:
+            status = input(f"Is '{topic}' completed? (yes/no): ").lower()
+            if status in ["yes", "no"]:
+                progress[topic] = True if status == "yes" else False
+                break
+            else:
+                print("Please enter only 'yes' or 'no'.")
 
-    with open("progress.txt", "w") as f:
-        for k, v in progress.items():
-            f.write(f"{k}:{v}\n")
+    try:
+        with open("progress.txt", "w") as f:
+            for key, value in progress.items():
+                f.write(f"{key}:{value}\n")
+        print("Progress saved successfully.")
+    except IOError:
+        print("Error while saving progress to file.")
 
-    print("Progress saved successfully.")
     return progress
 
 
@@ -38,8 +56,10 @@ def track_progress(progress):
 
 
 def show_details(name, topics):
-    print("\nName:", name)
-    print("Topics:", topics)
+    print("\nStudent Details")
+    print("----------------")
+    print("Name:", name)
+    print("Topics:", ", ".join(topics))
 
 
 # MAIN PROGRAM
@@ -47,21 +67,26 @@ name, topics = get_details()
 progress = {}
 
 while True:
-    print("\n1. Update progress")
+    print("\nMenu")
+    print("1. Update progress")
     print("2. Track progress")
     print("3. Check details")
     print("4. Exit")
 
-    choice = input("Enter your choice: ")
+    try:
+        choice = int(input("Enter your choice: "))
+    except ValueError:
+        print("Invalid input. Please enter a number between 1 and 4.")
+        continue
 
-    if choice == "1":
+    if choice == 1:
         progress = update_progress(topics)
-    elif choice == "2":
+    elif choice == 2:
         track_progress(progress)
-    elif choice == "3":
+    elif choice == 3:
         show_details(name, topics)
-    elif choice == "4":
-        print("Exiting program.")
+    elif choice == 4:
+        print("Exiting program. Goodbye!")
         break
     else:
-        print("Invalid choice. Try again.")
+        print("Invalid choice. Please try again.")
