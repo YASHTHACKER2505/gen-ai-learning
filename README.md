@@ -25,7 +25,6 @@ and projects.
   - Variables and input/output
   - Data types
   - Operators
-- Strengthened basic Python concepts required for ML and Gen AI
 
 ---
 
@@ -34,7 +33,7 @@ and projects.
   - Why Data Science Knowledge is important for an AI Engineer
   - What is Artificial Intelligence and Machine Learning
   - AI vs ML vs NLP vs DL vs GenAI
-- Built conceptual clarity about different AI domains
-- Focused on understanding rather than rushing
-
 ---
+### 04-01-2026 to 06-01-2026
+-Watched and understood :
+  - Types of ML
