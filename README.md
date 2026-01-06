@@ -37,3 +37,4 @@ and projects.
 ### 04-01-2026 to 06-01-2026
 - Watched and understood :
   - Types of ML
+  - Created Student Learning Tracker using basic python to cleare basics
