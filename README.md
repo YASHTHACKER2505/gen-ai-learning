@@ -38,3 +38,8 @@ and projects.
 - Watched and understood :
   - Types of ML
   - Created Student Learning Tracker using basic python to cleare basics
+### 07-01-2026
+- Watched Numpy Video 
+- Cleared My Basics of Numpy 
+  -Created file with code which i learned
+---
