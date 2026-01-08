@@ -43,3 +43,7 @@ and projects.
 - Cleared My Basics of Numpy 
   -Created file with code which i learned
 ---
+### 08-01-2026
+-completed assignments which are from  my tutor
+-incresed my confidence on basic python 
+--- 
