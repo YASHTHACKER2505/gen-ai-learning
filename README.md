@@ -47,3 +47,8 @@ and projects.
 - completed assignments which are from  my tutor
 - incresed my confidence on basic python 
 --- 
+### 09-01-2026
+- Watched & Learned :
+  -MACHINE LEARNING LIFE CYCLE
+- COMPLETED SOME MORE ASSIGNMENTS OF MY COURSE
+---
